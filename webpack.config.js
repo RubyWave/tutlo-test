@@ -48,6 +48,17 @@ module.exports = {
 				test: /\.(png|jpg|gif|svg)$/i,
 				type: "asset/resource",
 			},
+			{
+				test: /\.html$/,
+				use: [
+					{
+						loader: "html-loader",
+						options: {
+							minimize: true,
+						},
+					},
+				],
+			},
 		],
 	},
 	// pass all js files through Babel

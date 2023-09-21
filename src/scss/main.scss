@@ -1,9 +1,8 @@
 
-@import "colors";
 @import "fonts";
-@import "app";
-@import "button";
+@import "breakpoints";
+@import "colors";
+@import "base";
 
-@import "./components/table.scss";
-@import "./components/top-bar.scss";
-@import "./components/score-settings.scss";
+@import "components/header";
+@import "components/hero";

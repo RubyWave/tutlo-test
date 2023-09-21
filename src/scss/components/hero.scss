@@ -1,0 +1,14 @@
+.hero {
+	padding-top: 4rem;
+	.container {
+		display: flex;
+
+	}
+	&__text-part {
+		width: 40%;
+	}
+	&___image {
+		width: 50%;
+		margin-left: auto;
+	}
+}

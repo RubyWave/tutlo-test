@@ -1,0 +1,12 @@
+html {
+	font-family: "Exo 2";
+	font-size: 1rem;
+	color: $font-color;
+}
+body {
+	margin: 0;
+}
+.container {
+	max-width: Min(78.125rem, 90vw);
+	margin: 0 auto;
+}
