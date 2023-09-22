@@ -59,6 +59,10 @@ module.exports = {
 					},
 				],
 			},
+			{
+				test: /\.css$/,
+				use: ["style-loader", "css-loader"],
+			},
 		],
 	},
 	// pass all js files through Babel

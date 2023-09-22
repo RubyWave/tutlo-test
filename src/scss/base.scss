@@ -5,6 +5,8 @@ html {
 }
 body {
 	margin: 0;
+	padding-bottom: 10rem;
+	background: $pale;
 }
 .container {
 	max-width: Min(78.125rem, 90vw);

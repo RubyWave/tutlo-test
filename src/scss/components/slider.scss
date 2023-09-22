@@ -1,0 +1,49 @@
+.slider {
+	.container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@media (max-width: $breakpoint-phone) {
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+	}
+	.swiper {
+		width: Min(90%, 30rem);
+		margin: 0 2rem !important;
+		position: relative;
+		@media (max-width: $breakpoint-phone) {
+			width: 100%;
+			margin-bottom: 1.5rem;
+			margin: 0 !important;
+		}
+	}
+	.swiper-wrapper {
+		position: relative;
+	}
+	.swiper-slide {
+		&__text {
+			font-size: 1.25rem;
+			font-style: italic;
+		}
+		&__signature {
+			font-size: 0.75rem;
+			font-weight: 400;
+		}
+	}
+	.swiper-navigation {
+		cursor: pointer;
+		filter: invert(36%) sepia(10%) saturate(2833%) hue-rotate(158deg) brightness(94%) contrast(98%); //this is $navy colour
+		@media (max-width: $breakpoint-phone) {
+			order: 3;
+			margin-right: 0.5rem;
+		}
+		img {
+			height: 1.875rem;
+			object-fit: contain;
+		}
+		&.custom-swiper-button-next img {
+			transform: rotate(180deg);
+		}
+	}
+}
